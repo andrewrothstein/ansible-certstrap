@@ -1,0 +1,17 @@
+---
+# defaults file for certstrap
+certstrap_ver: '1.2.0'
+certstrap_os: linux
+certstrap_arch: amd64
+certstrap_mirror: https://github.com/square/certstrap/releases/download
+
+certstrap_install_dir: /usr/local/bin
+
+certstrap_checksums:
+  '1.2.0':
+    # https://github.com/square/certstrap/releases/download/v1.2.0/certstrap-1.2.0-darwin-amd64
+    darwin-amd64: sha256:4d85a324dbcd7405a2d0887d11a416e476abf37bd2a010bc86c05373c1c1b747
+    # https://github.com/square/certstrap/releases/download/v1.2.0/certstrap-1.2.0-linux-amd64
+    linux-amd64: sha256:db0007333f5285e8b4f42f684e3a9023e910f8955eb2471c4d65748d37b8b35b
+    # https://github.com/square/certstrap/releases/download/v1.2.0/certstrap-1.2.0-windows-amd64
+    windows-amd64: sha256:df42fec7e54de40c960935a8c45be31974f2be14073645936e04bb4f13714fe1
