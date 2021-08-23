@@ -1,6 +1,6 @@
 andrewrothstein.certstrap
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-certstrap.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-certstrap)
+![Build Status](https://github.com/andrewrothstein/ansible-certstrap/actions/workflows/build.yml/badge.svg)
 
 Installs [certstrap](https://github.com/square/certstrap).
 
