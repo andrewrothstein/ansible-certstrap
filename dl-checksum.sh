@@ -11,12 +11,12 @@ dl()
     local arch=$3
     local platform="$os-$arch"
     local file=${APP}-${ver}-${platform}
-    local url=$MIRROR/v$ver/$file
-    local lfile=$DIR/$file
+    local url=$MIRROR/v$ver/${APP}-${platform}
+    local lfile=$DIR/${APP}-${ver}-${platform}
 
     if [ ! -e $lfile ];
     then
-        wget -q -O $lfile $url
+        curl -sSLf -o $lfile $url
     fi
 
     printf "    # %s\n" $url
@@ -31,4 +31,4 @@ dlver () {
     dl $ver windows amd64
 }
 
-dlver ${1:-1.2.0}
+dlver ${1:-1.3.0}

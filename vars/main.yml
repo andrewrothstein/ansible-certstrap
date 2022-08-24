@@ -1,8 +1,7 @@
 ---
 # vars file for certstrap
 certstrap_platform: '{{ certstrap_os }}-{{ certstrap_arch }}'
-certstrap_exe: certstrap-{{ certstrap_ver }}-{{ certstrap_platform }}
-certstrap_url: '{{ certstrap_mirror }}/v{{ certstrap_ver }}/{{ certstrap_exe }}'
+certstrap_url: '{{ certstrap_mirror }}/v{{ certstrap_ver }}/certstrap-{{ certstrap_platform }}'
 certstrap_checksum: '{{ certstrap_checksums[certstrap_ver][certstrap_platform] }}'
-certstrap_installed_exe: '{{ certstrap_install_dir }}/{{ certstrap_exe }}'
+certstrap_installed_exe: '{{ certstrap_install_dir }}/certstrap-{{ certstrap_ver }}-{{ certstrap_platform }}'
 certstrap_installed_link: '{{ certstrap_install_dir }}/certstrap'
